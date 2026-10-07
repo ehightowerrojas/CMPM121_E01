@@ -44,8 +44,7 @@
         if (enemy.health <= 0) {
           continue;
         }
-        // Take the first living enemy, then any with at least as much health,
-        // so the later enemy wins when two have equal health.
+        // Take the first living enemy. Then, any with at least as much health so that the later enemy wins when two have equal health.
         if (!target || enemy.health >= target.health) {
           target = enemy;
         }
