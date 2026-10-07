@@ -24,12 +24,11 @@
       { name: "Teal", color: "#248a87" },
     ];
     let counter = 0;
-    let updates_enabled = true;
     const label = document.querySelector("#label");
     const swatch = document.querySelector("#swatch");
 
     function update() {
-      if (updates_enabled) {
+      if (true) {
         let item = colors[0];
         for (let i = 0; i < colors.length; i++) {
           if (i === counter) item = colors[i];
