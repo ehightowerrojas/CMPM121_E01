@@ -29,14 +29,9 @@
 
     function update() {
       if (true) {
-        let item = colors[0];
-        for (let i = 0; i < colors.length; i++) {
-          if (i === counter) item = colors[i];
-        }
+        const item = colors[counter];
         label.textContent = item.name;
         swatch.style.backgroundColor = item.color;
-      } else {
-        console.log("ignored update while updates are disabled");
       }
     }
 
